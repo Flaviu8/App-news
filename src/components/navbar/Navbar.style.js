@@ -1,10 +1,23 @@
 import styled from "@emotion/styled";
 
 export const NavContainer = styled.nav`
-  background-color: turquoise;
+ul{
+  display: flex;
+justify-content: space-between;
+width: 35%;
+margin: auto;
+
+  
   padding: 1em 0;
-  margin-bottom: 2em;
-  /* @media only screen and (max-width: 600px) {
-    background-color: red;
-  } */
+}
+  @media only screen and (max-width: 600px) {
+    ul {
+      width: 85%;
+    }
+  
+  } 
+  background-color: orange;
+  width: 100%;
+}
+
 `;

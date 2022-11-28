@@ -3,22 +3,27 @@ import { NavContainer } from "./Navbar.style";
 
 const Navbar = () => {
   return (
+
     <NavContainer>
+    <ul>
       <Link href="#" underline="none">
-        {"Link 1"}
+        {"Urban"}
       </Link>
       <Link href="#" underline="none">
-        {"Link 2"}
+        {"Climate Change"}
       </Link>
       <Link href="#" underline="none">
-        {"Link 3"}
+        {"Opinion"}
       </Link>
       <Link href="#" underline="none">
-        {"Link 4"}
+        {"Our Vision"}
       </Link>
       <Link href="#" underline="none">
-        {"Link 5"}
+        {"All articles"}
       </Link>
+
+    </ul>
+      
     </NavContainer>
   );
 };

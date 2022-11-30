@@ -17,11 +17,11 @@ export const UrbanMain = styled.div`
 export const Urban = styled.div`
   display: block;
   margin-top: 4em;
-  &:nth-child(2n) {
+  &:nth-of-type(2n) {
     margin-left: 4em;
   }
   @media only screen and (max-width: 1024px) {
-    &:nth-child(2n) {
+    &:nth-of-type(2n) {
       margin-left: 0;
     }
   }
@@ -51,14 +51,16 @@ export const UrbanTitle = styled.a`
     /* width: 100%;/ */
   }
 `;
-export const UrbanTitleEl = styled.h5`
+export const UrbanTitleEl = styled.span`
+  display: block;
   margin-top: 2em;
   margin-bottom: 0.6em;
   font-size: 1em;
   font-weight: normal;
 `;
 
-export const UrbanDescr = styled.a`
+export const UrbanDescr = styled.span`
+  display: block;
   font-size: 0.8em;
   line-height: 1.5;
   text-decoration: none;

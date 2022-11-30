@@ -1,4 +1,5 @@
-import { Link } from "@mui/material";
+// import { Link } from "@mui/material";
+import { Link, NavLink } from "react-router-dom";
 import { NavContainer } from "./Navbar.style";
 
 const Navbar = () => {
@@ -6,22 +7,21 @@ const Navbar = () => {
 
     <NavContainer>
     <ul>
-      <Link href="#" underline="none">
+      <NavLink to= "/"  >
         {"Urban"}
-      </Link>
-      <Link href="#" underline="none">
+      </NavLink>
+      <NavLink to="/climate-change" >
         {"Climate Change"}
-      </Link>
-      <Link href="#" underline="none">
+      </NavLink>
+      <NavLink to="opinion" >
         {"Opinion"}
-      </Link>
-      <Link href="#" underline="none">
+      </NavLink>
+      <NavLink to="our-vision" >
         {"Our Vision"}
-      </Link>
-      <Link href="#" underline="none">
+        </NavLink>
+      <NavLink to="all-articles">
         {"All articles"}
-      </Link>
-
+        </NavLink>
     </ul>
       
     </NavContainer>

@@ -3,7 +3,7 @@ import Title from "../title/Title";
 import data from "../../assets/arrayList";
 import { UrbanMain } from "./Urban.style";
 
-const Urban = () => {
+const UrbanContainer = () => {
   return (
     <div style={{
       paddingTop: "10em"
@@ -13,6 +13,7 @@ const Urban = () => {
         {data.map((item) => {
           return (
             <UrbanList
+              key={item.id}
               img={item.img}
               title={item.title}
               descr={item.descr}
@@ -25,4 +26,4 @@ const Urban = () => {
   );
 };
 
-export default Urban;
+export default UrbanContainer;

@@ -23,8 +23,7 @@ export const FooterTitle = styled.h2`
 
 export const FooterEl = styled.div`
    width: 50%;
-  
-  
+   
    @media only screen and (max-width: 1024px) {
   padding-top: 4em;
   width: 90%;

@@ -1,20 +1,16 @@
-import Header from "./components/header/Header";
-import Main from "./components/main/Main";
-import Climate from "./components/climate/Climate";
-import Urban from "./components/urban/Urban";
-import Video from "./components/video/Video";
-import Footer from "./components/footer/footer";
 import "./styles.css";
+import  Home  from "./pages/Home";
+import ClimateChange from "./pages/ClimateChange";
+import { Routes, Route } from "react-router";
+
 
 export default function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Climate />
-      <Urban />
-      <Video />
-      <Footer />
-    </div>
+      <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/climate-change" element={<ClimateChange />}/>
+      </Routes>
+     
+   
   );
 }

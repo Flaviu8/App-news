@@ -9,6 +9,8 @@ import {
   SearchContainer
 } from "./Header.style";
 
+
+
 const Header = () => {
   return (
     <header>

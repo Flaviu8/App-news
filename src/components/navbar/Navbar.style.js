@@ -3,11 +3,9 @@ import styled from "@emotion/styled";
 export const NavContainer = styled.nav`
 ul{
   display: flex;
-justify-content: space-between;
-width: 35%;
-margin: auto;
-
-  
+  justify-content: space-between;
+  width: 35%;
+  margin: auto;
   padding: 1em 0;
 }
   @media only screen and (max-width: 600px) {

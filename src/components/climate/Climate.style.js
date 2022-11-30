@@ -28,7 +28,7 @@ export const Climate = styled.div`
   display: block;
   margin-top: 2em;
   width: 23%;
-  &:nth-child(2n) img {
+  &:nth-of-type(2n) img {
     width: 100%;
     height: 350px;
     object-fit: cover;
@@ -54,14 +54,16 @@ export const ClimateTitle = styled.a`
      width: 100%;
   }
 `;
-export const ClimateTitleEl = styled.h5`
+export const ClimateTitleEl = styled.span`
+  display: block;
   margin-top: 2em;
   margin-bottom: 0.6em;
   font-size: 1em;
   font-weight: normal;
 `;
 
-export const ClimateDescr = styled.a`
+export const ClimateDescr = styled.span`
+  display: block;
   font-size: 0.8em;
   line-height: 1.5;
   text-decoration: none;

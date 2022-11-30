@@ -6,6 +6,7 @@ import { Key } from "@mui/icons-material";
 
 const arrList = [
   {
+    id: 1,
     icon: icon,
     user: "Admin",
     status: "9 hours ago",
@@ -15,6 +16,7 @@ const arrList = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   },
   {
+    id: 2,
     icon: icon,
     user: "Admin",
     status: "9 hours ago",
@@ -24,6 +26,7 @@ const arrList = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
   },
   {
+    id: 3,
     icon: icon,
     user: "Admin",
     status: "9 hours ago",
@@ -41,6 +44,7 @@ const Opinion = () => {
       {arrList.map((item) => {
         return (
           <OpinionItem
+            key={item.id}
             icon={item.icon}
             user={item.user}
             status={item.status}

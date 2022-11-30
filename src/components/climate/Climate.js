@@ -5,6 +5,7 @@ import { ClimateMain } from "./Climate.style";
 
 const arrList = [
   {
+    id: 1,
     url: "#",
     title: "What is Lorem Ipsum?",
     descr:
@@ -13,6 +14,7 @@ const arrList = [
       "https://i.picsum.photos/id/237/536/354.jpg?hmac=i0yVXW1ORpyCZpQ-CknuyV-jbtU7_x9EBQVhvT5aRr0"
   },
   {
+    id: 2,
     url: "#",
     title: "What is Lorem Ipsum?",
     descr:
@@ -21,6 +23,7 @@ const arrList = [
       "https://i.picsum.photos/id/237/536/354.jpg?hmac=i0yVXW1ORpyCZpQ-CknuyV-jbtU7_x9EBQVhvT5aRr0"
   },
   {
+    id: 3,
     url: "#",
     title: "What is Lorem Ipsum?",
     descr:
@@ -29,6 +32,7 @@ const arrList = [
       "https://i.picsum.photos/id/237/536/354.jpg?hmac=i0yVXW1ORpyCZpQ-CknuyV-jbtU7_x9EBQVhvT5aRr0"
   },
   {
+    id: 4,
     url: "#",
     title: "What is Lorem Ipsum?",
     descr:
@@ -46,6 +50,7 @@ const Climate = () => {
         {arrList.map((item) => {
           return (
             <ClimateList
+              key={item.id}
               img={item.img}
               title={item.title}
               descr={item.descr}

@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Preview from "../preview/Preview";
 
-const Video = () => {
+const SwiperVideo = () => {
   return (
     <div>
       <Title title={"Video"} />
@@ -31,4 +31,5 @@ const Video = () => {
   );
 };
 
-export default Video;
+export default SwiperVideo;
+

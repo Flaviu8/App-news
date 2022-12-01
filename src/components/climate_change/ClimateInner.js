@@ -1,7 +1,7 @@
 import React from "react";
 import ClimateChangeList from "./ClimateChangeList";
 
-const array = [{
+const arrayItems = [{
     id: 2,
     url: "#",
     title: "What is Lorem Ipsum?",
@@ -15,12 +15,13 @@ const array = [{
 const ClimateInner = () => {
     return (
     <div>
-        {array.map((item) => {
+        {arrayItems.map((item) => {
             return (
               <ClimateChangeList 
                 img={item.img}
                 title={item.title}
                 descr={item.descr}
+                key={item.id}
                 
                />
               
